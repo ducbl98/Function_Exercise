@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find All Prime Number Below 10000</title>
+</head>
+<body>
+<h2>All Prime Number Below 10000</h2>
+</body>
+<script>
+    function isPrimeNumber(num) {
+        let check = true
+        for (let i = 2; i <= num / 2; i++) {
+            if (num % i == 0) {
+                check = false;
+                break;
+            }
+        }
+        return check
+    }
+
+    for (let i = 2; i < 10000; i++) {
+        if(isPrimeNumber(i)){
+            document.write(i+"<br>")
+        }
+    }
+</script>
+</html>
