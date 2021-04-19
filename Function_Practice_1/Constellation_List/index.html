@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Constellation</title>
+</head>
+<body>
+</body>
+<script>
+    let con = prompt("Input the constellation ")
+    let con1 = ["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"]
+    let con2 = ["Ursa Minor","Taurus","Cygnus","Lyra","Aquila","Ursa Major","Leo"]
+    displayReverseConstellation(con)
+    function displayReverseConstellation(con){
+        let check = false
+        for (let i = 0; i < con1.length; i++) {
+            if (con === con1[i]){
+                check=true;
+                alert(con2[i]);
+                break;
+            }
+        }
+        if(!check){
+            alert("Not found")
+        }
+    }
+</script>
+</html>
