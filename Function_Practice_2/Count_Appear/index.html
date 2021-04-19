@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Count The Number Of Appearance</title>
+</head>
+<body>
+</body>
+<script>
+    let n = +prompt("Input Number Element ")
+    let a = inputArray(n);
+    let x = +prompt("Input Number To Count ")
+    alert(`${x} appear ${countAppear(x, a)} times`)
+
+    function inputArray(n) {
+        let a = []
+        for (let i = 0; i < n; i++) {
+            a.push(+prompt("Input Element "))
+        }
+        return a
+    }
+
+    function countAppear(x, a) {
+        let count = 0
+        for (let i = 0; i < a.length; i++) {
+            if (x === a[i]) {
+                count++
+            }
+        }
+        if (count > 0) {
+            return count
+        } else {
+            return -1
+        }
+    }
+</script>
+</html>

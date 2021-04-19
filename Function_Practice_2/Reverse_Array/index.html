@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reverse Array</title>
+</head>
+<body>
+</body>
+<script>
+    let n = +prompt("Input Number Element ")
+    let a = inputArray(n);
+    alert(`Reverse Array Is ${a.reverse().join(" ")}`)
+
+    function inputArray(n) {
+        let a = []
+        for (let i = 0; i < n; i++) {
+            a.push(+prompt("Input Element "))
+        }
+        return a
+    }
+</script>
+</html>
